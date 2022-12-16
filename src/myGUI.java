@@ -8,7 +8,7 @@ import java.awt.FlowLayout;
 
 public class myGUI {
   public myGUI(){
-    JFrame myFrame = new JFrame("Main Frame");
+    JFrame myFrame = new JFrame("Main Frame ");
     JFrame myFrame1 = new JFrame("Admin Frame");
     JFrame myFrame2 = new JFrame("Member Frame");
     JPanel myJPanel = new JPanel();
