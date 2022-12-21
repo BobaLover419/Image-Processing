@@ -8,9 +8,9 @@ public class App {
 
 	public static void main(String[] args)  throws IOException
 {
-		// TODO Auto-generated method stub
+		
 		 Library bookShelf = new Library();
-	     bookShelf.loadData("data.txt");
+	     bookShelf.loadData("jenny.txt");
 		 new dashBoardGUI(bookShelf);
 		
 	}

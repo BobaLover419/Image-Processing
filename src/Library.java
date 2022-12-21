@@ -15,7 +15,7 @@ public class Library {
      Book tempBook = new Book(isbn,title,author,publisher,price);
      bookshelf.add(tempBook);  
     }
-    
+    //load data from file
     public void loadData(String file_name){
     	try {
 	        Scanner scan = new Scanner(new File(file_name));
@@ -30,7 +30,11 @@ public class Library {
 	        }
 
 	        scan.close();
+	        //This exception will be thrown by the FileInputStream, FileOutputStream, and RandomAccessFile constructors when a file with the specified pathname does not exist. 
+	        //It will also be thrown by these constructors if the file does exist but for some reason is inaccessible, 
+	        //for example when an attempt is made to open a read-only file for writing.
 	    } catch (FileNotFoundException e) {
+	    	System.out.println("ERROR: File doesn't exist. Please double check!");
 	        e.printStackTrace();
 	    }
     }
